@@ -1,0 +1,8 @@
+const question = "do you like transformers";
+const answer = "yes";
+const userAnswer = prompt(question);
+const isCorrect = userAnswer && userAnswer.toLowerCase() === answer.toLowerCase();
+const resultMessage = isCorrect;
+'Congrations! $(userAnswer) is wrong. The correct answer is $(answer)';
+'Oops $(userAnswer) is wrong. The correct answer is $(answer)';
+console.log(resultMessage);
