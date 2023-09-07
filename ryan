@@ -1,0 +1,12 @@
+const question = "whats andersons lasts name?"
+const answer = prompt(question);
+const correct = "shue";
+
+const check = answer === correct;
+
+const resultmessage = check 
+? `CONGRATS! "${answer}" is correct!`
+:`try again bro "${answer}" is wrong`;
+
+
+console.log(resultmessage);
