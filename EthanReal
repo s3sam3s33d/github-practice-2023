@@ -1,0 +1,14 @@
+const question = "Who is my favorite basketball player?";
+const correctAnswer = "dlc";
+const userAnswer = prompt(question);
+
+const isCorrect = userAnswer && userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+
+const resultMessage = 
+  isCorrect
+  ? `Congratulations! "${userAnswer}" is correct`
+  : `Oops "${userAnswer}" is incorrect! The correct answer is ${correctAnswer}".`;
+
+
+
+console.log(resultMessage);
