@@ -1,0 +1,14 @@
+const userInput = prompt("please enter ur name! :)");
+
+const isNameValid = (name) => /^[A-Za-z]+$/.test(name);
+
+const answerName = (name)=> {
+  if (isNameValid(name)){
+    return "hi " + name;
+  }
+  else 
+    return "please enter aa valid username with only letters";
+}
+
+const sayHi = answerName(userInput);
+console.log(sayHi);
