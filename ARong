@@ -1,0 +1,8 @@
+const question = "What is the mascot of Glen A. Wilson? ";
+const correctAnswer = "wildcat";
+const userAnswer = prompt(question);
+const isCorrect = userAnswer && userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+const resultMessage = isCorrect
+  ? `"${userAnswer}" is correct! `
+  : `"${userAnswer}" is incorrect. The correct answer is "${correctAnswer}".`;
+console.log(resultMessage);
